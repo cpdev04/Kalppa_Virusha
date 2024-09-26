@@ -1,0 +1,1205 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>KV | Services</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo/favicon.ico">
+
+
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/favicon.svg">
+
+   <!-- CSS here -->
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="assets/css/swiper.min.css">
+   <link rel="stylesheet" href="assets/css/slick.css">
+   <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="assets/css/fontawesome-pro.css">
+   <link rel="stylesheet" href="assets/css/spacing.css">
+   <link rel="stylesheet" href="assets/css/main.css">
+   <style>
+      .tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    gap: 10px;
+}
+
+.tab-btn {
+    padding: 12px 25px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.tab-btn:hover {
+    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.15), -6px -6px 12px rgba(255, 255, 255, 0.8);
+}
+
+.tab-btn:active {
+    background: #ddd;
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.1), inset -4px -4px 10px rgba(255, 255, 255, 0.7);
+}
+
+.tab-btn.active {
+    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.1), inset -4px -4px 10px rgba(255, 255, 255, 0.7);
+    color: #007BFF; /* Highlight active tab */
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px; /* Increase space between buttons */
+    }
+
+    .tab-btn {
+        width: 100%; /* Make buttons full width */
+        text-align: center;
+    }
+}
+
+   </style>
+</head>
+
+<body>
+
+   <!-- preloader start -->
+   <div id="preloader">
+      <div class="bd-loader-inner">
+         <div class="bd-loader">
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+            <span class="bd-loader-item"></span>
+         </div>
+      </div>
+   </div>
+   <!-- preloader start -->
+
+   <!-- Back to top start -->
+   <div class="backtotop-wrap cursor-pointer">
+      <svg class="backtotop-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+   </div>
+   <!-- Back to top end -->
+
+   <!-- search area start -->
+   <div class="df-search-area">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-12">
+               <div class="df-search-form">
+                  <div class="df-search-close text-center mb-20">
+                     <button class="df-search-close-btn df-search-close-btn"></button>
+                  </div>
+                  <form action="#">
+                     <div class="df-search-input mb-10">
+                        <input type="text" placeholder="Search for product...">
+                        <button type="submit"><i class="flaticon-search-1"></i></button>
+                     </div>
+                     <div class="df-search-category">
+                        <span>Search by : </span>
+                        <a href="#">Healthline, </a>
+                        <a href="#">COVID-19, </a>
+                        <a href="#">Surgery, </a>
+                        <a href="#">Surgeon, </a>
+                        <a href="#">Medical research</a>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+   <!-- search area end -->
+
+   <!-- Offcanvas area start -->
+   <div class="fix">
+      <div class="offcanvas__info">
+         <div class="offcanvas__wrapper">
+            <div class="offcanvas__content">
+               <div class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
+                  <div class="offcanvas__logo">
+                     <a href="dashboard.html">
+                        <img src="assets/imgs/logo/KV_LOGO.webp" alt="logo not found" style="width:170px !important">
+                     </a>
+                  </div>
+                  <div class="offcanvas__close">
+                     <button>
+                        <i class="fal fa-times"></i>
+                     </button>
+                  </div>
+               </div>
+
+               <div class="mobile-menu fix mb-40"></div>
+               <div class="offcanvas__contact mt-30 mb-20">
+                  <h4>Contact Info</h4>
+                  <ul>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="fal fa-map-marker-alt"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a target="_blank"
+                              href="https://www.google.com/maps/place/Dhaka/@23.7806207,90.3492859,12z/data=!3m1!4b1!4m5!3m4!1s0x3755b8b087026b81:0x8fa563bbdd5904c2!8m2!3d23.8104753!4d90.4119873">
+                              Kalppa Virusha hospital RG Arcade, Sarjapur Rd, Anekal Taluk, Attibele, Anekal Taluk, Attibele, Bangalore-562107
+                           </a>
+                        </div>
+                     </li>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="far fa-phone"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a href="tel:+91843-192-2016">+91843-192-2016</a>
+                        </div>
+                     </li>
+                     <li class="d-flex align-items-center">
+                        <div class="offcanvas__contact-icon mr-15">
+                           <i class="fal fa-envelope"></i>
+                        </div>
+                        <div class="offcanvas__contact-text">
+                           <a href="mailto:prasadhospitalyel@gmail.com."><span>care.kvh@gmail.com</span></a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+               <div class="offcanvas__social">
+                  <ul>
+                     <li><a href="https://www.facebook.com/Kalppavirushahospital"><i class="fab fa-facebook-f"></i></a></li>
+                     <li><a href="https://x.com/Kalppa_virusha"><i class="fab fa-twitter"></i></a></li>
+                     <li><a href="https://www.instagram.com/kalppavirusha/"><i class="fab fa-instagram"></i></a></li>
+                     <li><a href="https://www.linkedin.com/company/26620598/admin/"><i class="fab fa-linkedin"></i></a></li>
+                     <li><a href="https://in.pinterest.com/kalppavirushahospital/"><i class="fab fa-pinterest"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="offcanvas__overlay"></div>
+   <div class="offcanvas__overlay-white"></div>
+   <!-- Offcanvas area start -->
+
+   <!-- Header area start -->
+   <header>
+      <div id="header-sticky" class="header-area">
+         <div class="container-fluid">
+            <div class="mega-menu-wrapper">
+               <div class="header-main">
+                  <div class="header-left">
+                     <div class="header-logo">
+                        <a href="index.html">
+                         <img src="assets/imgs/logo/KV_LOGO.webp" alt="logo not found" >
+                        </a>
+                     </div>
+                     <div class="mean__menu-wrapper d-none d-lg-block">
+                        <div class="main-menu">
+                           <nav id="mobile-menu">
+                              <ul>
+                                 <li>
+                                    <a href="index.html">Home</a>
+                                 </li>
+                                 <li>
+                                    <a href="about.html">About</a>
+                                 </li>
+                                 <li>
+                                    <a href="service.html">Services</a>
+                                 </li>
+                                 <li>
+                                    <a href="team.html">Team</a>
+                                 </li>
+                                 <li>
+                                    <a href="gallery.html">Gallery</a>
+                                 </li>
+                                 <li>
+                                    <a href="contact.html">Contact</a>
+                                 </li>
+                              </ul>
+                           </nav>
+                           <!-- for wp -->
+                           <div class="header__hamburger ml-50 d-none">
+                              <button type="button" class="hamburger-btn offcanvas-open-btn">
+                                 <span>01</span>
+                                 <span>01</span>
+                                 <span>01</span>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="header-right d-flex align-items-center justify-content-end ">
+                     <div class="header-action d-none d-lg-inline-flex gap-3 ">
+                        <div class="link-text d-none d-xxl-block">
+                           <span><img src="assets/imgs/svg/phone-call.svg" alt=""></span>
+                           <span><a href="tel:+918861796435">+918861796435</a></span>
+                        </div>
+                        <div class="header-lang-item header-lang d-none d-xl-block">
+
+                        </div>
+                        <div style="background-color:#092A53 !important;" class="header-quick-access d-flex align-items-center">
+                         
+                           <div class="divider-line"></div>
+                           <div class="header__hamburger">
+                              <div class="sidebar__toggle">
+                                 <a class="bar-icon is-white" href="javascript:void(0)">
+                                    <span></span>
+                                    <span>
+                                       <small></small>
+                                    </span>
+                                    <span></span>
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="header__hamburger d-lg-none">
+                     <div class="sidebar__toggle">
+                        <a class="bar-icon" href="javascript:void(0)">
+                           <span></span>
+                           <span>
+                              <small></small>
+                           </span>
+                           <span></span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- Header area end -->
+
+   <!-- Body main wrapper start -->
+   <main>
+
+      <!-- Breadcrumb area start  -->
+      <div class="breadcrumb__area theme-bg-1 p-relative z-index-11 pt-95 pb-95">
+         <div class="breadcrumb__thumb" data-background="assets/imgs/media/services_breadcrum.jpg"></div>
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-xxl-12">
+                  <div class="breadcrumb__wrapper text-center">
+                     <h2 class="breadcrumb__title">Service</h2>
+                     <div class="breadcrumb__menu">
+                        <nav>
+                           <ul>
+                              <li><span><a href="index.html">Home</a></span></li>
+                              <li><span style="color: #1C7CC4;">Service</span></li>
+                           </ul>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Breadcrumb area start  -->
+
+     
+
+     <div class="tabs">
+      <button class="tab-btn active" data-target="sec1">Our Services</button>
+      <button class="tab-btn" data-target="sec2">Intensive and Surgical Care Services</button>
+      <button class="tab-btn" data-target="sec3">Patient Care and Support Services</button>
+      <button class="tab-btn" data-target="sec4">Diagnostic Services</button>
+  </div>
+
+
+      <!-- Service area start -->
+      <section id="sec1" class="service-area theme-bg-2 section-space" style="padding-top: 50px !important;">
+         <h2 style="text-align: center;padding-bottom: 30px;font-size: 30px;">All Services</h2>
+         <div class="container">
+            <div class="row gy-5">
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/media/Maternity.png" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a id="service-hover">Maternity </a></h4>
+                        <p>Comprehensive maternity care offering personalized support, prenatal care, delivery, and postpartum services for mothers.</p>
+                        <br>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/Maternity_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/media/Gynecology.png" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Obstetrics & Gynecology </a></h4>
+                        <p>Our expert obstetrics and gynecology team provides personalized care, from routine check-ups to complex deliveries.</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/gyno_icone.png" alt=""></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/media/Fertility.png" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Fertility (IUI, IVF, & ICSI)</a></h4>
+                        <p>Our fertility services include advanced techniques like IUI, IVF, and ICSI to support couples in their journey to parenthood, with personalized care .</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/fertility_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/media/Generalmedicine.png" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">General medicine</a></h4>
+                        <p>Our general medicine specialists provide thorough evaluations and treatments for a wide range of medical conditions, focusing on comprehensive care.</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/General_med_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/media/Pediatrics.png" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Pediatrics</a></h4>
+                        <p>Our pediatric team offers compassionate, family-centered care for infants, children, and adolescents' growth and well-being.</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/Pediatrics_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/media/ENT.png" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Ent </a></h4>
+                        <p>Our ENT specialists provide expert care with advanced diagnostics and treatments for ear, nose, and throat conditions.</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/service/ENT.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/media/Orthopedic.png" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Orthopedic</a></h4>
+                        <p>Our orthopedic specialists treat fractures to joint replacements, focusing on safety, recovery, and personalized care.</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/Orthopedic_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/media/Pshycology.png" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">psychology</a></h4>
+                        <p>Our psychology services provide compassionate support and evidence-based therapies for mental health and emotional well-being.</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/Pshycology_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/Cardiolog.jpeg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">urology</a></h4>
+                        <p>Our urology team offers advanced care for urinary and reproductive disorders, with effective diagnostics and treatments.</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/service/Cardiology.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/media/Radiology.png" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Radiology</a></h4>
+                        <p>Our radiology team uses advanced imaging technologies to accurately diagnose and guide treatment for various conditions.</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/Radiology_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/media/General_surgery.png" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">General surgery</a></h4>
+                        <p>Our skilled general surgeons perform routine and complex procedures, prioritizing patient safety and personalized care.</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/General_surgery_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/media/dental.png" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Dentistry</a></h4>
+                        <p>Our dental care team offers routine cleanings and advanced procedures, focusing on oral health and aesthetics.</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/dental_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/media/Physiotherpy.png" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Physiotherpy</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis hic consequatur sapiente nesciunt deleniti!</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/Physiotherpy_icon.png" alt="" width="70px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/media/cardiology.png" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">cardiology</a></h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repellat a ipsa voluptatibus odio!</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/cardiology_icon.png" alt="" width="70px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/media/Dermatology.png" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Dermatology</a></h4>
+                        <p>Nephrologist specializes in kidney health, providing advanced care for optimal renal function.</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/Dermatology_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               
+               <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/media/Pathology.png" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Pathology</a></h4>
+                        <p>edical services required on the spot e.g. for medical</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/Pathology_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/ourservices/img_diabetology.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Diabetology </a></h4>
+                        <p>edical services required on the spot e.g. for medical</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/service/pathologist.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/ourservices/img_neurology.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Neurology </a></h4>
+                        <p>edical services required on the spot e.g. for medical</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/service/pathologist.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/ourservices/img_nephrology.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Nephrology </a></h4>
+                        <p>edical services required on the spot e.g. for medical</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/service/pathologist.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+
+               
+
+
+
+          
+      </section>
+
+      <section  id="sec2" style="background-color: #E4F0FF;padding-top: 50px !important;display: none;" class="service-area theme-bg-2 section-space" >
+         <h2 style="text-align: center;padding-bottom: 30px;font-size: 30px;">Intensive and Surgical Care Services</h2>
+         <div class="container">
+            <div class="row gy-5">
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/intensiveandsurgicalcareservices/img-43.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">ICU</a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/Maternity_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/intensiveandsurgicalcareservices/img-44.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">NICU </a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/gyno_icone.png" alt=""></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/intensiveandsurgicalcareservices/img-45.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Operation Theatre</a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/fertility_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/intensiveandsurgicalcareservices/img-46.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">High-Risk Pregnancy</a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/General_med_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/intensiveandsurgicalcareservices/img-47.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Laparoscopic Surgery</a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/Pediatrics_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/intensiveandsurgicalcareservices/img-48.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">General Surgery </a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/service/ENT.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+              
+
+
+
+            </div>
+         </div>
+      </section>
+
+      <section id="sec3" style="padding-top: 50px !important;display: none;"  class="service-area theme-bg-2 section-space">
+         <h2 style="text-align: center;padding-bottom: 30px;font-size: 30px;">Patient Care and Support Services</h2>
+         <div class="container">
+            <div class="row gy-5">
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/patientcareandsupportservices/img-49.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Emergency Services</a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/Maternity_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/patientcareandsupportservices/img-50.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Ambulance Services </a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/gyno_icone.png" alt=""></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/patientcareandsupportservices/img-51.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Inpatient Services</a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/fertility_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/patientcareandsupportservices/img-52.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Home Care Services</a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/General_med_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/patientcareandsupportservices/img-53.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Corporate Services</a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/Pediatrics_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/patientcareandsupportservices/img-54.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Cashless Insurance </a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/service/ENT.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+
+
+            </div>
+         </div>
+      </section>
+
+      <section id="sec4" style="background-color: #E4F0FF;padding-top: 50px !important;display: none;"  class="service-area theme-bg-2 section-space">
+         <h2 style="text-align: center;padding-bottom: 30px;font-size: 30px;">Diagnostic Services</h2>
+         <div class="container">
+            <div class="row gy-5">
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/diagnosticservices/img-55.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Laboratory</a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/Maternity_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/diagnosticservices/img-56.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">X-Ray</a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/gyno_icone.png" alt=""></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/diagnosticservices/img-57.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">HSG</a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/fertility_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/diagnosticservices/img-58.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Ultrasound</a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/General_med_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/diagnosticservices/img-59.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">Echo</a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/media/Pediatrics_icon.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                  <div class="service-item">
+                     <div class="service-thumb w-img">
+                        <a href="service-details.html"><img src="assets/imgs/service/diagnosticservices/img-60.jpg" alt=""></a>
+                     </div>
+                     <div class="service-content">
+                        <h4><a href="#">CT Scan </a></h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                        <div class="service-link"><a><i
+                                 class="fa-regular fa-angle-right"></i></a>
+                        </div>
+                        <div class="service-icon">
+                           <span><img src="assets/imgs/service/ENT.png" alt="" width="60px"></span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               
+
+
+
+            </div>
+         </div>
+      </section>
+
+
+
+      <!-- Service area end -->
+
+
+
+   </main>
+   <!-- Body main wrapper end -->
+
+      <!-- Footer area start -->
+      <footer>
+         <section class="footer-bg">
+            <div class="footer-area">
+               <div class="container">
+                  <div class="footer-grid b-b">
+                     <div class="footer-widget-2 footer-col-1">
+                        <div class="footer-logo mb-35">
+                           <a href="index.html">
+                              <img src="assets/imgs/logo/KV_LOGO.webp" alt="image bnot found"
+                                 >
+                           </a>
+                        </div>
+   
+                        <div class="footer-widget-info">
+                           <div class="footer-info mb-35">
+                              <div class="footer-info-item d-flex align-items-start">
+                                 <div class="footer-info-icon mr-20">
+                                    <span> <i class="fa-solid fa-location-dot"></i></span>
+                                 </div>
+      
+                                 <div class="footer-info-text">
+                                    <a href="#">Kalppa Virusha hospital
+   RG Arcade, Sarjapur Rd,
+   Anekal Taluk, Attibele,
+   Anekal Taluk, Attibele,
+   Bangalore-562107</a>
+                                 </div>
+      
+                              </div>
+                              <div class="footer-info-item d-flex align-items-start">
+                                 <div class="footer-info-icon mr-20">
+                                    <span><i class="fa-solid fa-envelope"></i></span>
+                                 </div>
+      
+                                 <div class="footer-info-text">
+                                    <a href="mailto:care.kvh@gmail.com">care.kvh@gmail.com</a>
+                                 </div>
+      
+                              </div>
+                              <div class="footer-info-item d-flex align-items-start">
+                                 <div class="footer-info-icon mr-20">
+                                    <span><i class="fa-solid fa-phone"></i></span>
+                                 </div>
+      
+                                 <div class="footer-info-text">
+                                    <a href="tel:+91843-192-2016">+91843-192-2016</a>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="theme-social">
+                              <a href="https://www.facebook.com/Kalppavirushahospital"><i class="fa-brands fa-facebook-f"></i></a>
+      
+      
+                              <a href="https://x.com/Kalppa_virusha"><i class="fa-brands fa-twitter"></i></a>
+                              <a href="https://www.instagram.com/kalppavirusha/"><i class="fa-brands fa-instagram"></i></a>
+      
+                              <a href="https://www.linkedin.com/company/26620598/admin/"><i class="fa-brands fa fa-linkedin"></i></a>
+   
+                              <a href="https://in.pinterest.com/kalppavirushahospital/"><i class="fa-brands fa fa-pinterest"></i></a>
+                           </div>
+                        </div>
+   
+                     </div>
+   
+                    
+   
+                     <div class="footer-widget-2 footer-col-2">
+                        <div class="footer-widget-title">
+                           <h4>Department</h4>
+                        </div>
+                        <div class="footer-link">
+                           <ul>
+                              <li style="white-space: nowrap;"><a href="#">Obestric Gyneacology</a></li>
+                              <li><a href="service.html">General Medicine</a></li>
+                              <li><a href="service.html">General Surgeon</a></li>
+                              <li><a href="service.html">Pediatrician</a></li>
+                              <li><a href="service.html">Ortho Surgeon</a></li>
+                              <li><a href="service.html">...View More...</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="footer-widget-2 footer-col-3">
+                        <div class="footer-widget-title">
+                           <h4 style="white-space: nowrap;">Quick Links</h4>
+                        </div>
+                        <div class="footer-link">
+                           <ul>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="about.html">About Us</a></li>
+                              <li><a href="team.html">Team</a></li>
+                              <li><a href="service.html">services</a></li>
+                              <li><a href="contact.html">Contacts</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="footer-widget-2 footer-col-4">
+                        <div class="footer-widget-title">
+                           <h4>Get Direction</h4>
+                        </div>
+                        <div class="theme-social">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.9523447514293!2d77.76888647358547!3d12.781605319018361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae73012a8a35e5%3A0xd14495893544d479!2sKalppa%20Virusha%20Hospital!5e0!3m2!1sen!2sin!4v1725605766219!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-copyright-area">
+               <div class="container">
+                  <div class="footer-copyright-wrapper">
+                     <div class="footer-copyright-text">
+                        <p class="mb-0">© All Copyright 2024 by <a target="_blank" href="#">Kalppa Virusha Hospital</a></p>
+                     </div>
+                     <div class="footer-conditions">
+                        <ul>
+                           <li><a href="#">Terms & Condition</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </footer>
+   <!-- Footer area end -->
+
+
+   <!-- JS here -->
+   <script>
+      document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.tab-btn');
+    const sections = document.querySelectorAll('.service-area');
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remove 'active' class from all tabs
+            tabs.forEach(t => t.classList.remove('active'));
+
+            // Add 'active' class to the clicked tab
+            tab.classList.add('active');
+
+            // Hide all sections
+            sections.forEach(section => section.style.display = 'none');
+
+            // Show the section that corresponds to the clicked tab
+            const target = tab.getAttribute('data-target');
+            document.getElementById(target).style.display = 'block';
+        });
+    });
+
+    // Set the first tab and section as active on page load
+    tabs[0].classList.add('active');
+    sections[0].style.display = 'block';
+});
+
+   </script>
+      
+   <script src="assets/js/jquery-3.6.0.min.js"></script>
+   <script src="assets/js/waypoints.min.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/meanmenu.min.js"></script>
+   <script src="assets/js/swiper.min.js"></script>
+   <script src="assets/js/slick.min.js"></script>
+   <script src="assets/js/magnific-popup.min.js"></script>
+   <script src="assets/js/counterup.js"></script>
+   <script src="assets/js/wow.js"></script>
+   <script src="assets/js/ajax-form.js"></script>
+   <script src="assets/js/beforeafter.jquery-1.0.0.min.js"></script>
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>

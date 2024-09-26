@@ -1,0 +1,109 @@
+<div class="slider-container">
+    <button class="arrow left-arrow">◀</button>
+  
+    <div class="services-wrapper">
+      <div class="services">
+        <div class="service-box">Service 1</div>
+        <div class="service-box">Service 2</div>
+        <div class="service-box">Service 3</div>
+        <div class="service-box">Service 4</div>
+        <div class="service-box">Service 5</div>
+        <div class="service-box">Service 6</div>
+        <div class="service-box">Service 7</div>
+      </div>
+    </div>
+  
+    <button class="arrow right-arrow">▶</button>
+  </div>
+  
+  <style>
+    .slider-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  
+    .services-wrapper {
+      overflow: hidden;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .services {
+      display: flex;
+      transition: transform 0.5s ease;
+      transform: translateX(0); /* Start from the first set of service boxes */
+    }
+  
+    .service-box {
+      width: 200px;
+      height: 150px;
+      margin: 10px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+      color: #333;
+    }
+  
+    .arrow {
+      background: none;
+      border: none;
+      font-size: 2em;
+      cursor: pointer;
+      color: #333;
+      transition: color 0.3s ease;
+      z-index: 10;
+    }
+  
+    .arrow:hover {
+      color: #007BFF;
+    }
+  
+    .left-arrow {
+      position: absolute;
+      left: 0;
+    }
+  
+    .right-arrow {
+      position: absolute;
+      right: 0;
+    }
+  </style>
+  
+  <script>
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+    const services = document.querySelector('.services');
+  
+    let scrollAmount = 0;
+    const serviceBoxWidth = 220; // Width of each box including margin
+    const maxScroll = (7 - 3) * serviceBoxWidth; // Max scroll based on 7 boxes and showing 3 at a time
+  
+    // Right arrow click event: Move the slider to the right
+    rightArrow.addEventListener('click', () => {
+      scrollAmount += serviceBoxWidth;
+      if (scrollAmount > maxScroll) {
+        scrollAmount = maxScroll; // Prevent overscrolling
+      }
+      services.style.transform = `translateX(-${scrollAmount}px)`;
+    });
+  
+    // Left arrow click event: Move the slider to the left
+    leftArrow.addEventListener('click', () => {
+      scrollAmount -= serviceBoxWidth;
+      if (scrollAmount < 0) {
+        scrollAmount = 0; // Prevent scrolling beyond the first set
+      }
+      services.style.transform = `translateX(-${scrollAmount}px)`;
+    });
+  </script>
+  
