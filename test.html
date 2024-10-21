@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Sections</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>KV | Services</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo/favicon.ico">
+ 
+ 
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/favicon.svg">
+ 
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-pro.css">
+    <link rel="stylesheet" href="assets/css/spacing.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* Basic reset and styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown {
+    margin: 20px;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.service-area {
+    padding: 20px;
+}
+
+.service-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.service-thumb img {
+    width: 100%;
+    height: auto;
+}
+
+.service-content {
+    padding: 20px;
+}
+
+.service-link a {
+    text-decoration: none;
+}
+
+.service-icon img {
+    width: 60px;
+}
+
+.theme-bg-2 {
+    background-color: #f4f4f4; /* Adjust color as needed */
+}
+
+.section-space {
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <label for="section-selector">Select Section:</label>
+        <select id="section-selector">
+            <option value="sec1">Section 1</option>
+            <option value="sec2">Section 2</option>
+            <option value="sec3">Section 3</option>
+        </select>
+    </div>
+
+    <section id="sec1" class="service-area theme-bg-2 section-space">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-thumb w-img">
+                            <a href="service-details.html"><img src="assets/imgs/media/Maternity.png" alt=""></a>
+                        </div>
+                        <div class="service-content">
+                            <h4><a href="#">Maternity Care1</a></h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                            <div class="service-link"><a href="#"><i class="fa-regular fa-angle-right"></i></a></div>
+                            <div class="service-icon">
+                                <span><img src="assets/imgs/media/Maternity_icon.png" alt="" width="60px"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec2" class="service-area theme-bg-2 section-space" style="display:none;">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-thumb w-img">
+                            <a href="service-details.html"><img src="assets/imgs/media/Maternity.png" alt=""></a>
+                        </div>
+                        <div class="service-content">
+                            <h4><a href="#">Maternity Care2</a></h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                            <div class="service-link"><a href="#"><i class="fa-regular fa-angle-right"></i></a></div>
+                            <div class="service-icon">
+                                <span><img src="assets/imgs/media/Maternity_icon.png" alt="" width="60px"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec3" class="service-area theme-bg-2 section-space" style="display:none;">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6">
+                    <div class="service-item">
+                        <div class="service-thumb w-img">
+                            <a href="service-details.html"><img src="assets/imgs/media/Maternity.png" alt=""></a>
+                        </div>
+                        <div class="service-content">
+                            <h4><a href="#">Maternity Care3</a></h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore esse in soluta amet lorem</p>
+                            <div class="service-link"><a href="#"><i class="fa-regular fa-angle-right"></i></a></div>
+                            <div class="service-icon">
+                                <span><img src="assets/imgs/media/Maternity_icon.png" alt="" width="60px"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const sectionSelector = document.getElementById('section-selector');
+    const sections = document.querySelectorAll('.service-area');
+
+    sectionSelector.addEventListener('change', (event) => {
+        const selectedValue = event.target.value;
+
+        sections.forEach(section => {
+            if (section.id === selectedValue) {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        });
+    });
+});
+
+    </script>
+      <script src="assets/js/jquery-3.6.0.min.js"></script>
+      <script src="assets/js/waypoints.min.js"></script>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/meanmenu.min.js"></script>
+      <script src="assets/js/swiper.min.js"></script>
+      <script src="assets/js/slick.min.js"></script>
+      <script src="assets/js/magnific-popup.min.js"></script>
+      <script src="assets/js/counterup.js"></script>
+      <script src="assets/js/wow.js"></script>
+      <script src="assets/js/ajax-form.js"></script>
+      <script src="assets/js/beforeafter.jquery-1.0.0.min.js"></script>
+      <script src="assets/js/main.js"></script>
+</body>
+</html>
